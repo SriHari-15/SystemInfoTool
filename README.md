@@ -23,7 +23,7 @@ All the information is displayed and logged in a file named `Sysinfo-<date>-<tim
 
 ---
 ### Usage:
-- Go to the releases tab and download the latest release
+- Download the [latest release](https://github.com/SriHari-15/SystemInfoTool/releases/latest)
 - Open terminal in the downloaded folder
 - Run the program:
 ```
