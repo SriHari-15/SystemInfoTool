@@ -11,7 +11,16 @@ std::string getCPUInfo() {
     while (std::getline(cpuInfoFile, line)) {
         if(line.find("model name") != std::string::npos) {
             cpuInfo << line << std::endl;
+            break;
         }
+    }
+
+    while (std::getline(cpuInfoFile, line)) {
+        if (line.find("cpu cores") != std::string::npos) {
+            cpuInfo << line << std::endl;
+            break;
+        }
+        
     }
 
     cpuInfoFile.close();

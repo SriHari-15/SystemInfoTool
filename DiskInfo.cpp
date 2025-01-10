@@ -9,7 +9,8 @@ std::string getDiskInfo() {
 
     std::string line;
     while (std::getline(diskInfoFile, line)) {
-        if (line.find("/dev/sda") != std::string::npos) {
+        if (line.find("/dev/sda") != std::string::npos ||
+            line.find("/dev/nvme0n1") != std::string::npos) {
             diskInfo << line << std::endl;
         }
     }
