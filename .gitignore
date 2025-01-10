@@ -1,11 +1,6 @@
 SIT
 *.o
 .vscode/
-*.swp
-*.swo
-.vscode
 *.log
 .DS_Store
-Thumbs.db
 Makefile.user
-*~
